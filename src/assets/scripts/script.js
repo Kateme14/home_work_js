@@ -35,3 +35,11 @@ let fifthWord = "рубило"
 let lengthWords = firstWord.length + secondWord.length + thirdWord.length + fourthWord.length + fifthWord.length
 
 console.log(lengthWords)
+
+let firstName = "Masha"
+let age = 25
+let single = true
+
+console.log(`Variable: firstName have type ${typeof firstName}`)
+console.log(`Variable: age have type ${typeof age}`)
+console.log(`Variable: single have type ${typeof single}`)
