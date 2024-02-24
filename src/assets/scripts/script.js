@@ -26,11 +26,11 @@ else{
 }
 
 // Задание 3
-for(let i = 1; i<=20; i++){
-    if(i%3==0){
-        console.log(i)
-    }
-}
+// for(let i = 1; i<=20; i++){
+//     if(i%3==0){
+//         console.log(i)
+//     }
+// }
 
 // Задание 4
 let key = true
@@ -90,8 +90,27 @@ switch (world){
         console.log('попробуйте еще раз')
 }
 
+// Задание 1*
 
+let userName = 'пОлИнА нАбЕрЕжНаЯ'
+let correctedName = ''
 
+let capitalizeFlag = true
+
+for(let i = 0; i<userName.length; i++){
+    if(capitalizeFlag){
+        correctedName += userName[i].toUpperCase()
+        capitalizeFlag = false
+    }
+    else{
+    correctedName += userName[i].toLowerCase()
+}
+if(userName[i] === ' '){
+    capitalizeFlag = true
+}
+}
+
+alert('Привет, ' + correctedName + '!')
 
 
 
