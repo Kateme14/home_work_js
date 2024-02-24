@@ -1,5 +1,6 @@
 'use strict'
 
+// Задание 1
 let string = 'true'
 let boolean = false
 let number = 17
@@ -12,6 +13,7 @@ console.log(typeof number)
 console.log(typeof undefined)
 console.log(typeof myNull)
 
+// Задание 2
 let height = 15
 let width = 20
 
@@ -22,3 +24,23 @@ if (height > width){
 else{
     console.log(width)
 }
+
+// Задание 3
+for(let i = 1; i<=20; i++){
+    if(i%3==0){
+        console.log(i)
+    }
+}
+
+// Задание 4
+let key = true
+let documents = true
+let pen = true
+let apple = false
+let orange = true
+
+let shouldGoToWork = key && documents && pen && (apple || orange)
+
+console.log("Can go to work:", shouldGoToWork)
+
+
