@@ -43,4 +43,21 @@ let shouldGoToWork = key && documents && pen && (apple || orange)
 
 console.log("Can go to work:", shouldGoToWork)
 
+// Задание 5
+let salary = prompt('Salary')
+if(salary%3==0 && salary%5==0){
+    console.log('FizBuz')
+}
+else if (salary%5==0){
+    console.log('Fiz')
+}
+else if(salary%3==0){
+        console.log('Buz')
+}
+
+
+
+
+
+
 
