@@ -55,7 +55,20 @@ else if(salary%3==0){
         console.log('Buz')
 }
 
+// Задание 6
+let age = prompt('Your age')
 
+if(age>18){
+    console.log('Попей пивка')
+}
+
+else{
+    console.log('Пей колу')
+}
+
+if(age>16 && age<18){
+    console.log('Можешь выкурить сигаретку, только маме не говори')
+}
 
 
 
