@@ -112,6 +112,18 @@ if(userName[i] === ' '){
 
 alert('Привет, ' + correctedName + '!')
 
+// Задание 2*
+
+let userNumber = parseFloat(prompt('Назовите число'))
+let numberMinus = parseFloat(prompt('Сколько отнять'))
+let numberPlus = parseFloat(prompt('Сколько прибавить'))
+let numberMultiply = parseFloat(prompt('Сколько умножить'))
+let numberDivide = parseFloat(prompt('Сколько разделить'))
+
+let numberResult = ((((userNumber - numberMinus) + numberPlus) * numberMultiply) / numberDivide)
+
+alert(`((((${userNumber} - ${numberMinus}) + ${numberPlus}) * ${numberMultiply}) / ${numberDivide}) = ${numberResult}`)
+
 
 
 
