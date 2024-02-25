@@ -125,5 +125,18 @@ let numberResult = ((((userNumber - numberMinus) + numberPlus) * numberMultiply)
 alert(`((((${userNumber} - ${numberMinus}) + ${numberPlus}) * ${numberMultiply}) / ${numberDivide}) = ${numberResult}`)
 
 
+// Задание 3*
+
+let ladder = 6
+
+for(let k = 1; k <= ladder; k++){
+    let stair = ''
+    for(let j = 1; j <= k; j++){
+        stair += '#'
+    }
+    console.log(stair)
+}
+
+
 
 
