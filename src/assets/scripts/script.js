@@ -90,27 +90,27 @@ switch (world){
         console.log('попробуйте еще раз')
 }
 
-// // Задание 1*
+// Задание 1*
 
-// let userName = 'пОлИнА нАбЕрЕжНаЯ'
-// let correctedName = ''
+let userName = 'пОлИнА нАбЕрЕжНаЯ'
+let correctedName = ''
 
-// let capitalizeFlag = true
+let capitalizeFlag = true
 
-// for(let i = 0; i<userName.length; i++){
-//     if(capitalizeFlag){
-//         correctedName += userName[i].toUpperCase()
-//         capitalizeFlag = false
-//     }
-//     else{
-//     correctedName += userName[i].toLowerCase()
-// }
-// if(userName[i] === ' '){
-//     capitalizeFlag = true
-// }
-// }
+for(let i = 0; i<userName.length; i++){
+    if(capitalizeFlag){
+        correctedName += userName[i].toUpperCase()
+        capitalizeFlag = false
+    }
+    else{
+    correctedName += userName[i].toLowerCase()
+}
+if(userName[i] === ' '){
+    capitalizeFlag = true
+}
+}
 
-// alert('Привет, ' + correctedName + '!')
+alert('Привет, ' + correctedName + '!')
 
 // Задание 2*
 
@@ -136,27 +136,6 @@ for(let k = 1; k <= ladder; k++){
     }
     console.log(stair)
 }
-
-
-// Задание 1*
-
-let userName = 'пОлИнА нАбЕрЕжНаЯ'
-let correctedName = ''
-
-// let capitalizeFlag = true
-if (i = 0 || userName[i - 1] === ' '){
-correctedName += userName[i].toUpperCase
-}
-for(let i = 1; i<userName.length; i++){
-        correctedName += userName[i].toLowerCase()
-    }
- 
-if(userName[i] === ' '){
-    capitalizeFlag = true
-}
-
-
-alert('Привет, ' + correctedName + '!')
 
 
 
