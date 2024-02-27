@@ -139,3 +139,22 @@ fooBoo(true, foo, boo)
 fooBoo(false, foo, boo)
 fooBoo(0, foo, boo)
 fooBoo(1, foo, boo)
+
+//Задание 1*
+
+function triangle(a, b, c){
+    if(Number.isInteger(a) && Number.isInteger(b) && Number.isInteger(c)){
+        if(a+b>c && a+c>b && b+c>a){
+            return true
+        }
+    
+        else{
+            return false
+        }
+    }
+    return false
+}
+
+console.log(triangle(8, 9, 12))
+console.log(triangle(3, 5, 8))
+console.log(triangle(2, 1, 4))
