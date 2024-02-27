@@ -91,3 +91,51 @@ console.log(finalSum5)
 
 let finalSum6 = getSum(3, 4)
 console.log(finalSum6)
+
+//Задание 6
+//Вариант с нестрогим сравнение
+function fooBoo(bool, foo, boo){
+    if (bool == true){
+        foo()
+    }
+    else{
+        boo()
+    }
+}
+
+function foo(){
+    console.log('foo')
+}
+
+function boo(){
+    console.log('boo')
+}
+
+fooBoo(true, foo, boo)
+fooBoo(false, foo, boo)
+fooBoo(0, foo, boo)
+fooBoo(1, foo, boo)
+
+//Вариант со строгим сравнение
+
+function fooBoo(bool, foo, boo){
+    if (bool === true){
+        foo()
+    }
+    else{
+        boo()
+    }
+}
+
+function foo(){
+    console.log('foo')
+}
+
+function boo(){
+    console.log('boo')
+}
+
+fooBoo(true, foo, boo)
+fooBoo(false, foo, boo)
+fooBoo(0, foo, boo)
+fooBoo(1, foo, boo)
