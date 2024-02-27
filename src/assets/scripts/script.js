@@ -45,7 +45,7 @@ let resultString = trimString(stringInput, "Строка", "хочу")
 console.log(resultString)
 
 //Задание 4
-function sumOfDigits(number){
+function getSumNumbers(number){
     let sum1 = 0
     let startPoint = String(number)
     for(let i=0; i<startPoint.length; i++){
@@ -54,4 +54,40 @@ function sumOfDigits(number){
     return sum1
 }
 
-console.log(sumOfDigits(9987))
+console.log(getSumNumbers(9987))
+
+//Задание 5
+function getSum(a, b){
+    if(a == b){
+        return a
+    }
+    let startDigit = Math.min(a, b)
+    let endDigit = Math.max(a, b)
+    let sum2 = 0
+
+    for(i=startDigit; i<=endDigit; i++){
+        sum2 += i
+    }
+    return sum2
+}
+
+let finalSum = getSum(8, 12)
+console.log(finalSum)
+
+let finalSum1 = getSum(-8, 3)
+console.log(finalSum1)
+
+let finalSum2 = getSum(8, 8)
+console.log(finalSum2)
+
+let finalSum3 = getSum(5, 10)
+console.log(finalSum3)
+
+let finalSum4 = getSum(-4, 2)
+console.log(finalSum4)
+
+let finalSum5 = getSum(-2, -2)
+console.log(finalSum5)
+
+let finalSum6 = getSum(3, 4)
+console.log(finalSum6)
