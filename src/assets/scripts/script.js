@@ -158,3 +158,18 @@ function triangle(a, b, c){
 console.log(triangle(8, 9, 12))
 console.log(triangle(3, 5, 8))
 console.log(triangle(2, 1, 4))
+
+//Задание 2*
+
+function chocolate (n, m){
+    if(n<=0 || m<=0){
+        return 0
+    }
+    return (n*m)-1
+}
+
+console.log(chocolate(3, 2))
+console.log(chocolate(2, 2))
+console.log(chocolate(6, 8))
+console.log(chocolate(1, 1))
+console.log(chocolate(0, 1))
