@@ -173,3 +173,50 @@ console.log(chocolate(2, 2))
 console.log(chocolate(6, 8))
 console.log(chocolate(1, 1))
 console.log(chocolate(0, 1))
+
+//Задание 3*
+
+function taxAmount(amount, tax){
+    return amount*tax
+}
+
+function formatToDollars(price){
+    return '$'+price.toFixed(2)
+}
+
+const PHONE_PRICE = 400
+const ACCESSORY_PRICE = 20
+const TAX = 0.08
+
+let balance = parseFloat(prompt('Введите ваш баланс'))
+// let startPurchase = 0
+
+if(PHONE_PRICE<=balance){
+    let startPurchase = 0
+
+while(balance>=startPurchase+PHONE_PRICE){
+    startPurchase+=PHONE_PRICE
+    startPurchase+=taxAmount(PHONE_PRICE, TAX)
+
+    if(balance>=ACCESSORY_PRICE+startPurchase){
+        startPurchase+=ACCESSORY_PRICE
+        startPurchase+=taxAmount(ACCESSORY_PRICE, TAX)
+    }else{
+        break
+    }
+}
+
+console.log("Обшая стоимость:" + formatToDollars(startPurchase))
+
+if(balance>=startPurchase){
+    console.log('Покупайте ваш телефон')
+}
+
+else{
+    console.log('Работайте больше и тогда у вас все получится')
+}
+
+}else{
+    console.log('Надо еще поработать')
+}
+
