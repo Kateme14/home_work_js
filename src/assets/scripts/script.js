@@ -89,6 +89,7 @@ const password = prompt('Введите ваш пароль')
 
 if(!login || !password){
     alert("Поля не должны быть пустыми")
+    continue
 }
 
 const customerData = {
@@ -106,3 +107,5 @@ if(login === confirmLogin && password === confirmPassword){
     alert("Данные введены не верно")
 }
 }
+
+//Задание 1*
