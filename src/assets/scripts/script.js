@@ -153,3 +153,28 @@ function compareObjects(obj1, obj2){
 }
 
 console.log(compareObjects(student1, student2))
+
+//Задание 3
+
+const animals = {
+        cat: {
+        name: 'Енчик',
+        age: 3,
+    },
+        dog: {
+        name: 'Орео',
+        age: 2,
+    }, 
+    // bird: {
+    //     name: 'Кеша',
+    //     age: 3,
+    // },
+}
+
+const birdName = animals.bird?.name
+
+if(birdName === undefined){
+    console.log('Птицы нет в списке')
+} else{
+    console.log(`Имя птицы: ${birdName}`)
+}
