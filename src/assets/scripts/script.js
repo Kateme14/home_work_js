@@ -1,3 +1,5 @@
+'use strict'
+
 //Задание 1
 
 let myObject = {
@@ -24,3 +26,21 @@ if('cake' in shopList){
 } else{
     console.log('false')
 }
+
+//Задание 3
+
+const student = {
+    name: 'John',
+    age: 19,
+    isHappy: true
+    }
+
+    console.log("Выводим ключи объекта:")
+        for(let key in student){
+            console.log(key)
+        }
+       
+    console.log("Выводим значения ключей объекта:")
+        for(let key in student){
+            console.log(student[key])
+        }
