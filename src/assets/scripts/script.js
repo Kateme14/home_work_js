@@ -109,3 +109,21 @@ if(login === confirmLogin && password === confirmPassword){
 }
 
 //Задание 1*
+
+function footballScore(score){
+    const numbersToWords = ["ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"]
+    const goals = score.split(':')
+    const teamGoals1 = parseInt(goals[0])
+    const teamGoals2 = parseInt(goals[1])
+
+    if (teamGoals1 > 9 || teamGoals2 > 9)
+        return "Вы слишком много забили голов"
+
+    const words1 = numbersToWords[teamGoals1]
+    const words2 = numbersToWords[teamGoals2]
+
+    return `Результат: ${words1} : ${words2}`
+
+}
+
+console.log(footballScore("4:10"))
