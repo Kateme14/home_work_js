@@ -44,3 +44,22 @@ const student = {
         for(let key in student){
             console.log(student[key])
         }
+//Задание 4, способ 1
+        const colors = {
+            'ru pum pu ru rum': {
+            red: 'красный',
+            green: 'зеленый',
+            blue: 'синий'
+            }
+        }
+
+        const values1 = Object.values(colors['ru pum pu ru rum'])
+        console.log(values1[0])
+        console.log(values1[2])
+
+//Задание 4, способ 2
+
+        const values2 = colors['ru pum pu ru rum']
+
+        console.log(values2.red)
+        console.log(values2.blue)
