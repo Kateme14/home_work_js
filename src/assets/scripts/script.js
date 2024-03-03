@@ -63,3 +63,19 @@ const student = {
 
         console.log(values2.red)
         console.log(values2.blue)
+
+//Задание 5
+
+let salaries = {
+    andrey: 500,
+    sveta: 413,
+    anton: 987,
+    igor: 664,
+    alexandra: 199
+    }
+
+let totalSalary = 0
+for (let employee in salaries)
+   totalSalary += salaries[employee]
+
+console.log(totalSalary / Object.keys(salaries).length)
