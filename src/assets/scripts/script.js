@@ -79,3 +79,30 @@ for (let employee in salaries)
    totalSalary += salaries[employee]
 
 console.log(totalSalary / Object.keys(salaries).length)
+
+//Задание 6
+
+let trueData = false
+while(!trueData){
+const login = prompt('Введите ваш логин')
+const password = prompt('Введите ваш пароль')
+
+if(!login || !password){
+    alert("Поля не должны быть пустыми")
+}
+
+const customerData = {
+    login,
+    password 
+}
+
+const confirmLogin = prompt('Введите ваш логин для проверки')
+const confirmPassword = prompt('Введите ваш пароль для проверки')
+
+if(login === confirmLogin && password === confirmPassword){
+    trueData = true
+    alert("Welcome")
+} else{
+    alert("Данные введены не верно")
+}
+}
