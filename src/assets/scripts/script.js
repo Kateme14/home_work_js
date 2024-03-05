@@ -125,3 +125,22 @@ function averageSum(matrix){
 
 const average = averageSum(matrix)
 console.log(average)
+
+//Задание 3*
+
+const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4]
+
+const arrPositive = []
+const arrNegative = []
+
+for (let number of mixedNumbers){
+    if (number >= 0){
+        arrPositive.push(number)
+    } 
+    else{
+        arrNegative.push(number)
+    }
+}
+
+console.log(arrPositive)
+console.log(arrNegative)
