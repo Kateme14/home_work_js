@@ -144,3 +144,18 @@ for (let number of mixedNumbers){
 
 console.log(arrPositive)
 console.log(arrNegative)
+
+//Задание 4* 
+
+const randomNumbers = []
+
+for(let i = 0; i < 5; i++){
+    randomNumbers.push(Math.floor(Math.random()*50))
+}
+
+console.log(randomNumbers)
+
+const randomNumbersCubed = randomNumbers.map(randomNumbers => randomNumbers * randomNumbers * randomNumbers)
+
+console.log(randomNumbersCubed)
+
