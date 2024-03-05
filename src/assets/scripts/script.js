@@ -46,3 +46,15 @@ const numbers3 = [5, 43, 63, 23, 90]
 numbers3.splice(0, numbers3.length)
 
 console.log(numbers3)
+
+
+//Задание 4
+
+const students = ['Polina', 'Dasha', 'Masha']
+
+students.pop()
+students.push('Borya')
+students.shift()
+students.unshift('Andrey')
+
+console.log(students)
