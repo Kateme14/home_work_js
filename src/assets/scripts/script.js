@@ -99,3 +99,29 @@ console.log(isPalindrome('черепаха'))
 console.log(isPalindrome('довод'))
 console.log(isPalindrome('TeNet'))
 console.log(isPalindrome('палиндром'))
+
+
+//Задание 2*
+
+const matrix = [
+    [12, 98, 78, 65, 23],
+    [54, 76, 98, 43, 65],
+    [13, 324, 65, 312],
+    [9092, 22, 45, 90000],
+    ]
+
+function averageSum(matrix){
+    let sum = 0
+    let elementCount = 0
+
+    for(let rows of matrix){
+        for(let items in rows){
+            sum += items
+            elementCount++
+        }
+    }
+    return sum / elementCount
+}
+
+const average = averageSum(matrix)
+console.log(average)
