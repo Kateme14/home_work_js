@@ -85,3 +85,17 @@ const binary = [0, 0, 0, 0]
 const binary1 = binary.join('1')
 console.log(binary1)
 
+
+//Задание 1*
+
+function isPalindrome(word){
+    word = word.toLowerCase()
+    const wordReversed = word.split('').toReversed().join('')
+    return word === wordReversed
+}
+
+
+console.log(isPalindrome('черепаха'))
+console.log(isPalindrome('довод'))
+console.log(isPalindrome('TeNet'))
+console.log(isPalindrome('палиндром'))
