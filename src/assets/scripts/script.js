@@ -70,3 +70,11 @@ for(let i = 0; i < cats.length; i++){
 for(let item of cats){
     console.log(item)
 }
+
+//Задание 6 
+
+const evenNumbers = [2, 4, 6, 8, 10]
+const oddNumbers = [1, 3, 5, 7, 9]
+
+let unite = evenNumbers.concat(oddNumbers)
+console.log(unite, unite.indexOf(8))
