@@ -78,3 +78,10 @@ const oddNumbers = [1, 3, 5, 7, 9]
 
 let unite = evenNumbers.concat(oddNumbers)
 console.log(unite, unite.indexOf(8))
+
+//Задание 7
+
+const binary = [0, 0, 0, 0]
+const binary1 = binary.join('1')
+console.log(binary1)
+
