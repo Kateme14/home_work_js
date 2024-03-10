@@ -68,3 +68,19 @@ console.log(sum)
 
 const sum1 = fibonacci3.reduce((accumulator, currentValue)=>accumulator+currentValue)
 console.log(sum1)
+
+
+//Задание 5
+
+const numbers2 = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5]
+
+function numbersEven(element){
+    return element % 2 === 0
+}
+
+const allEven = numbers2.find(numbersEven)
+
+console.log(allEven)
+
+const allEven2 = numbers2.find(element => (element % 2 === 0))
+console.log(allEven2)
