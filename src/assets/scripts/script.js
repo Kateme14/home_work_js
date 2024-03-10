@@ -55,3 +55,16 @@ console.log(positiveNumbers);
 const positiveNumbers1 = numbers.filter(number => number >= 0);
 
 console.log(positiveNumbers1);
+
+//Задание 4
+
+const fibonacci3 = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]
+
+function sumOfAllNumbers(accumulator, currentValue){
+    return accumulator+currentValue
+}
+const sum = fibonacci3.reduce(sumOfAllNumbers, 0)
+console.log(sum)
+
+const sum1 = fibonacci3.reduce((accumulator, currentValue)=>accumulator+currentValue)
+console.log(sum1)
