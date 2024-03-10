@@ -29,7 +29,7 @@ const formattedUsers = users.map(formatUsers);
 
 console.log(formattedUsers);
 
-//Способ 2
+
 
 const users1 = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
 
@@ -37,4 +37,21 @@ const formattedUsers1 = users1.map((user, index) => `member ${index + 1}: ${user
 
 console.log(formattedUsers1);
 
+//Задание 3
+//Способ 1
 
+const numbers = [7, -4, 32, -90, 54, 32, -21];
+
+function filterPositive(number) {
+    return number >= 0;
+}
+
+const positiveNumbers = numbers.filter(filterPositive);
+
+console.log(positiveNumbers);
+
+//Способ 2
+
+const positiveNumbers1 = numbers.filter(number => number >= 0);
+
+console.log(positiveNumbers1);
