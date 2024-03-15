@@ -122,4 +122,21 @@ function totalCalculation(students){
     return totalSum
 }
 
-console.log("Общая сумма кредита " + totalCalculation(students))
+console.log("Общая сумма кредита: " + totalCalculation(students))
+
+//Задание 2*
+
+function removeVowels(inputString) {
+    const vowels = new Set(['a', 'e', 'u', 'o', 'i', 'A', 'E', 'U', 'O', 'I']) 
+    let result = ''
+    for (const char of inputString){
+        if(!vowels.has(char)){
+            result += char
+        }
+    }
+    return result
+}
+
+const inputString = 'This information should be checked'
+const outputString = removeVowels(inputString)
+console.log(outputString)
