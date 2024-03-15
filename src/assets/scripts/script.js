@@ -84,3 +84,42 @@ console.log(allEven)
 
 const allEven2 = numbers2.find(element => (element % 2 === 0))
 console.log(allEven2)
+
+//Задание 1*
+
+function Student(name, rate, salary){
+    this.name = name
+    this.rate = rate
+    this.salary = salary
+
+    this.calculations = function(){
+        switch (this.rate){
+            case 'A':
+                return this.salary*12
+            case 'B':
+                return this.salary*9
+            case 'C':
+                return this.salary*6
+            default:
+                return 0
+        }
+    }
+}
+
+const students = [
+    new Student('Андрей', 'B', 15000),
+    new Student('Максим', 'A', 50000),
+    new Student('Паша', 'D', 1000),
+    new Student('Аня', 'B', 12000),
+    new Student('Катя', 'A', 70000),
+]
+
+function totalCalculation(students){
+    let totalSum = 0
+    students.forEach(student => {
+        totalSum+=student.calculations()
+    })
+    return totalSum
+}
+
+console.log("Общая сумма кредита " + totalCalculation(students))
