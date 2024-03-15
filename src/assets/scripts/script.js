@@ -140,3 +140,28 @@ function removeVowels(inputString) {
 const inputString = 'This information should be checked'
 const outputString = removeVowels(inputString)
 console.log(outputString)
+
+//Задание 3*
+
+function accum(inputString){
+    const letters = inputString.split('')
+    let result = ''
+
+    for (let i = 0; i < letters.length; i++){
+        result += letters[i].toUpperCase()
+
+        for (let j = 0; j < i; j++){
+            result += letters[i].toLowerCase()
+        }
+
+        if(i !== letters.length - 1){
+            result += '-'
+        }
+    } 
+    return result
+}
+
+console.log(accum('abcd'))
+console.log(accum('RqaEzt'))
+console.log(accum('cwAt'))
+console.log(accum('hjrt'))
