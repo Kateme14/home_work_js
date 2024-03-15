@@ -143,8 +143,8 @@ console.log(outputString)
 
 //Задание 3*
 
-function accum(inputString){
-    const letters = inputString.split('')
+function accum(inputString1){
+    const letters = inputString1.split('')
     let result = ''
 
     for (let i = 0; i < letters.length; i++){
@@ -165,3 +165,18 @@ console.log(accum('abcd'))
 console.log(accum('RqaEzt'))
 console.log(accum('cwAt'))
 console.log(accum('hjrt'))
+
+//Задание 4*
+
+function highestAndLowest(inputString2){
+    const numbers = inputString2.split(' ').map(Number)
+    const highest = Math.max(...numbers)
+    const lowest = Math.min(...numbers)
+    return `${highest} ${lowest}`
+}
+
+console.log(highestAndLowest('4 7 8 2 9'))
+console.log(highestAndLowest('1 2 -3 4 5'))
+console.log(highestAndLowest('9 7 9 2 1'))
+console.log(highestAndLowest('7 6 4 5 3'))
+console.log(highestAndLowest('2 1 3 -4 6'))
