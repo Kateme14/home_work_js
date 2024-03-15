@@ -180,3 +180,24 @@ console.log(highestAndLowest('1 2 -3 4 5'))
 console.log(highestAndLowest('9 7 9 2 1'))
 console.log(highestAndLowest('7 6 4 5 3'))
 console.log(highestAndLowest('2 1 3 -4 6'))
+
+//Задание 5*
+
+function isogram(inputString3){
+    const lowerCaseString = inputString3.toLowerCase()
+    const letterCount = {}
+
+    for(char of lowerCaseString){
+        if (letterCount[char]){
+            return false
+        }
+
+        letterCount[char] = true
+    }
+    return true
+}
+
+console.log(isogram('Tbilisi'))
+console.log(isogram('Batumi'))
+console.log(isogram('Poland'))
+console.log(isogram('Terminator'))
