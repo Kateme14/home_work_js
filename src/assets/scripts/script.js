@@ -201,3 +201,31 @@ console.log(isogram('Tbilisi'))
 console.log(isogram('Batumi'))
 console.log(isogram('Poland'))
 console.log(isogram('Terminator'))
+
+//Задание 6* (пока что для меня это сложное задание, решить не получилось)
+
+//Задание 7*
+
+function toSymbol(word){
+    const lowerCaseString3 = word.toLowerCase()
+    const letterCount2 = {}
+    let result = ''
+
+    for(let char of lowerCaseString3){
+        letterCount2[char] = (letterCount2[char] || 0) + 1
+    }
+
+    for(let char of lowerCaseString3){
+        if(letterCount2[char] > 1){
+            result += ')'
+        } else {
+            result += '('
+        }
+    }
+    return result
+}
+
+console.log(toSymbol('din'))
+console.log(toSymbol('recede'))
+console.log(toSymbol('Success'))
+console.log(toSymbol('(( @'))
