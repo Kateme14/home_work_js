@@ -2,10 +2,10 @@
   "name": "home_work_js",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": "src/todo-list/index1.html",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel src/todo-list/index1.html",
+    "build": "parcel build src/todo-list/index1.html"
   },
   "author": "",
   "license": "ISC",
