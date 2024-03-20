@@ -47,6 +47,13 @@ addButton.addEventListener('click', function(){
             <div class = 'container__close'><button class = 'container__close-btn'><svg class = 'close_svg' xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#fff" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg></button><span class = 'container__date'>(${dateField})</span></div>`
         textContainer.appendChild(todoList)
         inputField.value = ''
+
+        todoList.querySelector('.container__close-btn').addEventListener('click', function(event){
+            const listItem = event.target.closest('.container__todo-list')
+            if(listItem){
+                listItem.remove()
+            }
+        })
     }
 })
 
@@ -56,12 +63,7 @@ deleteButton.addEventListener('click', function(){
 
 textContainer.addEventListener('click', function(event){
     const target = event.target
-    if(target.classList.contains('container__close-btn')){
-        const listItem = target.closest('li')
-        if(listItem){
-            listItem.remove()
-        }
-    } else if(target.tagName === 'INPUT' && target.type === 'checkbox'){
+    if(target.tagName === 'INPUT' && target.type === 'checkbox'){
         const whatToDo = target.nextElementSibling
         if(target.checked){
             whatToDo.classList.add('completed')
